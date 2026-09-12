@@ -290,6 +290,16 @@ font-size: 25px;
 
 }
 
+h1 a{
+    color: #d4af37;
+    text-decoration: none;
+}
+
+h1 a:hover{
+    background-color: #d4af37;
+    color: #0d1b2a;
+    border-radius: 35px;
+}
 *::selection{
     background-color: #d4af37;
     color: #0d1b2a;
