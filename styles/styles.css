@@ -283,6 +283,18 @@ a{
 }
 
 
+/*FIRST LETTER*/
+
+p::first-letter{
+font-size: 25px;
+
+}
+
+*::selection{
+    background-color: #d4af37;
+    color: #0d1b2a;
+
+}
 @media (max-width: 599px) {
     .carru-hab {
         height: 100px;
