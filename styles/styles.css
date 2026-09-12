@@ -267,6 +267,21 @@ a{
     text-decoration: none;
 }
 
+/* BEFORE*/
+
+.presentacion::before{
+    content: "📇 ";
+}
+.biograf::before{
+    content: "📖 ";
+}
+.habilidades::before{
+    content: "🔧 ";
+}
+.proyec::before{
+    content: "🚀 ";
+}
+
 
 @media (max-width: 599px) {
     .carru-hab {
