@@ -1,0 +1,28 @@
+@use "../utilities/variables" as *;
+
+
+@use "../utilities/mixins" as *;
+
+
+
+
+header {
+  background-color: $medium_blue;
+  border-radius: $radio_base;
+  padding: $espacio_sm;
+  margin: $espacio_md;
+  gap: $espacio_lg;
+
+
+
+
+  @include responder_a(tablet) {
+
+    @include flex_caja(column, space-between, center, $espacio_sm);
+  }
+
+  
+  @include responder_a(escritorio) {
+    @include flex_caja(row, space-between, center, $espacio_lg);
+  }
+}
