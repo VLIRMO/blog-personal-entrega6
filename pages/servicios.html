@@ -13,6 +13,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
      
 </head>
 
@@ -59,11 +61,11 @@
 
         <section class="row g-3">
             <div class="col-12">
-                <h2 class="subsecciones">Categorías</h2>
+                <h2 class="subsecciones"data-aos="zoom-in">Categorías</h2>
             </div>
 
             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="zoom-in">
                     <div class="card-body">
                         <h3 class="card-title">Desarrollo Web Full Stack</h3>
                         <p class="card-text">Creación de sitios y páginas web
@@ -74,7 +76,7 @@
 
 
             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="zoom-in">
                     <div class="card-body">
                         <h3 class="card-title">Mantenimiento y Actualización Web</h3>
                         <p class="card-text">Puesta a punto de páginas existentes
@@ -85,7 +87,7 @@
 
 
             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="zoom-in">
                     <div class="card-body">
                         <h3 class="card-title">Revisión & Calidad Web (QA Manual)</h3>
                         <p class="card-text">Testing y optimización de sitios
@@ -96,7 +98,7 @@
 
 
             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card h-100">
+                <div class="card h-100" data-aos="zoom-in">
                     <div class="card-body">
                         <h3 class="card-title">Diseño UI/UX & Maquetación Web</h3>
                         <p class="card-text">Prototipado e interfaz de usuario
@@ -136,6 +138,15 @@
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, 
+    once: true     
+  });
+</script>
 </body>
 
 </html>

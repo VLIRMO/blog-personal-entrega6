@@ -269,10 +269,21 @@ footer div ul {
   color: #d4af37;
 }
 
+.align-items-center {
+  perspective: 1000px;
+}
+
 .carru-hab {
   border-radius: 50px;
   height: 30vh;
   object-fit: cover;
+  /* EFECTO 3d*/
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.carru-hab:hover {
+  transform: rotateX(15deg) rotateY(-20deg) rotateZ(3deg) scale(1.05);
+  box-shadow: -15px 25px 30px rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 599px) {
   .carru-hab {

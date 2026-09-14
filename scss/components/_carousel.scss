@@ -1,11 +1,25 @@
 @use "../utilities/variables" as *;
 
+.align-items-center {
+  perspective: 1000px;
+}
+
 .carru-hab {
   border-radius: $radio_boton;
   height: 30vh;
   object-fit: cover;
 
-  
+/* EFECTO 3d*/
+
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+
+&:hover {
+    transform: rotateX(15deg) rotateY(-20deg) rotateZ(3deg) scale(1.05);
+    box-shadow: -15px 25px 30px rgba(0, 0, 0, 0.4);
+  }
+
   @media (max-width: 599px) {
     height: 100px;
   }
