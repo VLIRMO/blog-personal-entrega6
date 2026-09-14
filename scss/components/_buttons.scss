@@ -6,10 +6,14 @@
 
   border-radius: $radio_boton;
 
+  transition: transform 0.2s ease, background-color 0.2s ease, border 0.2s ease;
+
   &:hover {
     color: $mostaza;
     border-bottom: $mostaza solid 2px;
     border-left: $mostaza solid 2px;
+
+    transform: translateY(-2px);
   }
 
 
@@ -18,16 +22,23 @@
     color: $deep_blue;
 
     background-color: $mostaza;
+    transform: translateY(0);
   }
 }
 
 .botones {
+
+  transition: transform 0.2s ease, color 0.5s ease;
+
   &:hover {
-    
+
     color: $mostaza;
     border-bottom: $mostaza solid 2px;
     border-left: $mostaza solid 2px;
     border-radius: $radio_boton;
+
+transform: scale(1.08);
+
   }
 
   &:active {

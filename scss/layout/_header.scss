@@ -1,7 +1,7 @@
 @use "../utilities/variables" as *;
 
 header {
-  background-color: $medium_blue;
+  background: linear-gradient(135deg, $mostaza 31%, $deep_blue 69%, $medium_blue 100%);
   border-radius: $radio_caja;
   padding: 10px;
   margin: 20px;

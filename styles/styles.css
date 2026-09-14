@@ -144,7 +144,7 @@ figcaption {
 }
 
 header {
-  background-color: #415a77;
+  background: linear-gradient(135deg, #d4af37 31%, #0d1b2a 69%, #415a77 100%);
   border-radius: 35px;
   padding: 10px;
   margin: 20px;
@@ -198,22 +198,29 @@ footer div ul {
 .btn {
   background-color: #d4af37;
   border-radius: 50px;
+  transition: transform 0.2s ease, background-color 0.2s ease, border 0.2s ease;
 }
 .btn:hover {
   color: #d4af37;
   border-bottom: #d4af37 solid 2px;
   border-left: #d4af37 solid 2px;
+  transform: translateY(-2px);
 }
 .btn:active {
   color: #0d1b2a;
   background-color: #d4af37;
+  transform: translateY(0);
 }
 
+.botones {
+  transition: transform 0.2s ease, color 0.5s ease;
+}
 .botones:hover {
   color: #d4af37;
   border-bottom: #d4af37 solid 2px;
   border-left: #d4af37 solid 2px;
   border-radius: 50px;
+  transform: scale(1.08);
 }
 .botones:active {
   color: #0d1b2a;
