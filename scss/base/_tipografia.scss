@@ -1,0 +1,85 @@
+@use "../utilities/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+p::first-letter {
+  font-size: 25px;
+}
+
+h1 a {
+  color: $mostaza;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $mostaza;
+    color: $deep_blue;
+    border-radius: $radio_caja;
+  }
+}
+
+h2 a {
+  &:hover {
+    color: $deep_blue;
+    background-color: $mostaza;
+  }
+}
+
+.titulo,
+.minisub {
+  list-style: none;
+  border-radius: $radio_caja;
+  color: $mostaza;
+  background-color: $deep_blue;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.subsecciones {
+  justify-content: center;
+  border-bottom: $mostaza solid 1px;
+  border-left: $mostaza solid 1px;
+  border-radius: $radio_boton;
+  padding: 10px;
+  gap: 10px;
+  color: $mostaza;
+}
+
+.subsubtitulos {
+  justify-content: center;
+  color: $gris_claro;
+  border-radius: $radio_caja;
+  padding: 10px;
+  gap: 10px;
+  margin: 20px;
+}
+
+.parrafo {
+  color: $gris_claro;
+  padding: 10px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: $color_caption;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+// pseudoelementos
+.presentacion::before {
+  content: "📇 ";
+}
+
+.biograf::before {
+  content: "📖 ";
+}
+
+.habilidades::before {
+  content: "🔧 ";
+}
+
+.proyec::before {
+  content: "🚀 ";
+}

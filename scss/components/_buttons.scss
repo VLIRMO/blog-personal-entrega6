@@ -1,0 +1,37 @@
+@use "../utilities/variables" as *;
+
+
+.btn {
+  background-color: $mostaza;
+
+  border-radius: $radio_boton;
+
+  &:hover {
+    color: $mostaza;
+    border-bottom: $mostaza solid 2px;
+    border-left: $mostaza solid 2px;
+  }
+
+
+
+  &:active {
+    color: $deep_blue;
+
+    background-color: $mostaza;
+  }
+}
+
+.botones {
+  &:hover {
+    
+    color: $mostaza;
+    border-bottom: $mostaza solid 2px;
+    border-left: $mostaza solid 2px;
+    border-radius: $radio_boton;
+  }
+
+  &:active {
+    color: $deep_blue;
+    background-color: $mostaza;
+  }
+}

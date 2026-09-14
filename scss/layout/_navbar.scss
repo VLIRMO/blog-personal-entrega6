@@ -1,0 +1,18 @@
+@use "../utilities/variables" as v;
+
+.navbar-nav {
+    background-color: v.$deep_blue;
+    border-radius: 35px;
+    margin: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-toggler {
+    background-color: v.$mostaza;
+
+    &:hover {
+        background-color: v.$deep_blue;
+    }
+
+}

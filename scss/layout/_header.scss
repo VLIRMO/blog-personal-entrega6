@@ -1,28 +1,22 @@
 @use "../utilities/variables" as *;
 
-
-@use "../utilities/mixins" as *;
-
-
-
-
 header {
   background-color: $medium_blue;
-  border-radius: $radio_base;
-  padding: $espacio_sm;
-  margin: $espacio_md;
-  gap: $espacio_lg;
+  border-radius: $radio_caja;
+  padding: 10px;
+  margin: 20px;
+  gap: 30px;
 
-
-
-
-  @include responder_a(tablet) {
-
-    @include flex_caja(column, space-between, center, $espacio_sm);
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
 
-  
-  @include responder_a(escritorio) {
-    @include flex_caja(row, space-between, center, $espacio_lg);
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 30px;
   }
 }

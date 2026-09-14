@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+
+.accordion,
+
+.accordion-item,
+
+.accordion-button {
+  background-color: $medium_blue;
+  color: $gris_claro;
+  border-radius: $radio_caja;
+  padding: 10px;
+}
+
+.accordion-button {
+    
+  &:not(.collapsed) {
+    background-color: $gris_claro;
+    color: $mostaza;
+  }
+}

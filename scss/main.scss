@@ -1,2 +1,30 @@
-@use "utilities/variables"
+@charset "UTF-8";
 
+@use "utilities/variables";
+
+
+
+@use "layout/navbar";
+
+
+
+
+@use "utilities/mixins";
+
+
+@use "base/base";
+@use "base/tipografia";
+
+
+@use "layout/header";
+
+@use "layout/footer";
+
+@use "components/buttons";
+
+@use "components/cards";
+
+@use "components/accordion";
+
+@use "components/carousel";
+@use "components/habilidades";

@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+
+.carru-hab {
+  border-radius: $radio_boton;
+  height: 30vh;
+  object-fit: cover;
+
+  
+  @media (max-width: 599px) {
+    height: 100px;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $mostaza;
+  border-radius: 100%;
+}
