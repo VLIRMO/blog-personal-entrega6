@@ -169,7 +169,7 @@ header {
 footer {
   background-color: #d1d1d1;
   border-radius: 35px;
-  padding: 30px 40px;
+  padding: 30px 60px;
   margin: 20px;
   gap: 10px;
 }
@@ -232,7 +232,7 @@ footer div ul {
   background-color: #d4af37;
   border-radius: 35px;
 }
-.card .card-title {
+.card .card-title, .card .card-text {
   color: #0d1b2a;
 }
 .card .card-body {
