@@ -1,7 +1,11 @@
-
-@mixin flex-centro {
-
+@mixin flex-centro($direccion: row, $justificar: space-between, $alinear: center, $separacion: 0px) {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: $direccion;
+  justify-content: $justificar;
+  align-items: $alinear;
+  gap: $separacion;
+}
+
+@mixin transicion-suave($propiedad: all, $duracion: 0.3s) {
+  transition: $propiedad $duracion ease-in-out;
 }

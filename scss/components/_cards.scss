@@ -1,12 +1,15 @@
 @use "../utilities/variables" as *;
 
-.card {
-  color: $deep_blue;
-  
+%tarjeta-estilo-base {
   background-color: $mostaza;
+}
+
+.card {
+  @extend %tarjeta-estilo-base;
+  color: $deep_blue;
   border-radius: $radio_caja;
 
-  .card-title , .card-text{
+  .card-title, .card-text {
     color: $deep_blue;
   }
 
@@ -16,19 +19,28 @@
 }
 
 .tarjeta {
+  @extend %tarjeta-estilo-base;
+  border-radius: $radio_tarjeta;
+}
+
+.tarjeta {
   background-color: $mostaza;
 
   border-radius: $radio_tarjeta;
 }
 
 .proyectos {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-centro(column, flex-start, center, 10px);
   border-radius: $radio_caja;
   background-color: $medium_blue;
   padding: 10px;
-  gap: 10px;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+.carru-hab {
+  animation: flotar 3s ease-in-out infinite;
 }
