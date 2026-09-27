@@ -1,20 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-.navbar-nav {
-  background-color: #0d1b2a;
-  border-radius: 35px;
-  margin: 10px;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar-toggler {
-  background-color: #d4af37;
-}
-.navbar-toggler:hover {
-  background-color: #0d1b2a;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +12,7 @@
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-color: #171716;
   color: #415a77;
@@ -46,20 +31,18 @@ ul li a {
   text-decoration: none;
 }
 
-div div ul li {
-  list-style: none;
-}
-
 .bodycontainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
+  min-height: 100vh;
 }
 
 main {
+  grid-area: main;
   background-color: #0d1b2a;
-  border-radius: 35px;
+  border-radius: 15px;
   padding: 10px;
   margin: 20px;
   gap: 10px;
@@ -76,7 +59,7 @@ h1 a {
 h1 a:hover {
   background-color: #d4af37;
   color: #0d1b2a;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 
 h2 a:hover {
@@ -87,7 +70,7 @@ h2 a:hover {
 .titulo,
 .minisub {
   list-style: none;
-  border-radius: 35px;
+  border-radius: 15px;
   color: #d4af37;
   background-color: #0d1b2a;
   margin: 10px;
@@ -99,7 +82,7 @@ h2 a:hover {
   justify-content: center;
   border-bottom: #d4af37 solid 1px;
   border-left: #d4af37 solid 1px;
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 10px;
   gap: 10px;
   color: #d4af37;
@@ -108,7 +91,7 @@ h2 a:hover {
 .subsubtitulos {
   justify-content: center;
   color: #f7f3e9;
-  border-radius: 35px;
+  border-radius: 15px;
   padding: 10px;
   gap: 10px;
   margin: 20px;
@@ -144,17 +127,17 @@ figcaption {
 }
 
 header {
+  grid-area: header;
   background: linear-gradient(135deg, #d4af37 31%, #0d1b2a 69%, #415a77 100%);
-  border-radius: 35px;
+  border-radius: 25px;
   padding: 10px;
   margin: 20px;
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media (min-width: 600px) {
   header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
@@ -162,43 +145,30 @@ header {
 @media (min-width: 1024px) {
   header {
     flex-direction: row;
+    justify-content: space-between;
     gap: 30px;
   }
 }
 
-footer {
-  background-color: #d1d1d1;
-  border-radius: 35px;
-  padding: 30px 60px;
-  margin: 20px;
+.navbar-nav {
+  background-color: #0d1b2a;
+  border-radius: 15px;
+  margin: 10px;
+  align-items: center;
   gap: 10px;
 }
-footer h2 {
-  color: #0d1b2a;
+
+.navbar-toggler {
+  background-color: #d4af37;
 }
-footer div ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-@media (min-width: 1024px) {
-  footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.navbar-toggler:hover {
+  background-color: #0d1b2a;
 }
 
 .btn {
   background-color: #d4af37;
-  border-radius: 50px;
-  transition: transform 0.2s ease, background-color 0.2s ease, border 0.2s ease;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
 }
 .btn:hover {
   color: #d4af37;
@@ -213,13 +183,13 @@ footer div ul {
 }
 
 .botones {
-  transition: transform 0.2s ease, color 0.5s ease;
+  transition: transform 0.2s ease-in-out;
 }
 .botones:hover {
   color: #d4af37;
   border-bottom: #d4af37 solid 2px;
   border-left: #d4af37 solid 2px;
-  border-radius: 50px;
+  border-radius: 25px;
   transform: scale(1.08);
 }
 .botones:active {
@@ -227,10 +197,13 @@ footer div ul {
   background-color: #d4af37;
 }
 
+.tarjeta, .card {
+  background-color: #d4af37;
+}
+
 .card {
   color: #0d1b2a;
-  background-color: #d4af37;
-  border-radius: 35px;
+  border-radius: 15px;
 }
 .card .card-title, .card .card-text {
   color: #0d1b2a;
@@ -240,8 +213,12 @@ footer div ul {
 }
 
 .tarjeta {
+  border-radius: 15px;
+}
+
+.tarjeta {
   background-color: #d4af37;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .proyectos {
@@ -249,10 +226,25 @@ footer div ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 35px;
+  gap: 10px;
+  border-radius: 15px;
   background-color: #415a77;
   padding: 10px;
-  gap: 10px;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.carru-hab {
+  animation: flotar 3s ease-in-out infinite;
 }
 
 .accordion,
@@ -260,7 +252,7 @@ footer div ul {
 .accordion-button {
   background-color: #415a77;
   color: #f7f3e9;
-  border-radius: 35px;
+  border-radius: 15px;
   padding: 10px;
 }
 
@@ -274,7 +266,7 @@ footer div ul {
 }
 
 .carru-hab {
-  border-radius: 50px;
+  border-radius: 25px;
   height: 30vh;
   object-fit: cover;
   /* EFECTO 3d*/
@@ -311,6 +303,37 @@ footer div ul {
 @media (min-width: 1024px) {
   .contenedor-habilidades {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+footer {
+  grid-area: footer;
+  background-color: #d1d1d1;
+  border-radius: 15px;
+  padding: 30px 60px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer h2, footer h3 {
+  color: #0d1b2a;
+  margin-bottom: 8px;
+}
+footer div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

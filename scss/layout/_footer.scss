@@ -1,14 +1,21 @@
 @use "../utilities/variables" as *;
 
 footer {
+  grid-area: footer;
+
   background-color: $gris_footer;
   border-radius: $radio_caja;
   padding: 30px 60px;
   margin: 20px;
-  gap: 10px;
 
-  h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+
+  h2, h3 {
     color: $deep_blue;
+    margin-bottom: 8px;
   }
 
   div ul {
@@ -22,8 +29,6 @@ footer {
   }
 
   @media (min-width: 1024px) {
-    grid-area: footer;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
