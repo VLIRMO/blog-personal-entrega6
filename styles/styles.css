@@ -43,9 +43,9 @@ main {
   grid-area: main;
   background-color: #0d1b2a;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
-  gap: 10px;
+  gap: 20px;
 }
 
 p::first-letter {
@@ -82,7 +82,7 @@ h2 a:hover {
   justify-content: center;
   border-bottom: #d4af37 solid 1px;
   border-left: #d4af37 solid 1px;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 10px;
   gap: 10px;
   color: #d4af37;
@@ -130,7 +130,7 @@ header {
   grid-area: header;
   background: linear-gradient(135deg, #d4af37 31%, #0d1b2a 69%, #415a77 100%);
   border-radius: 25px;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@ header {
 
 .btn {
   background-color: #d4af37;
-  border-radius: 25px;
+  border-radius: 10px;
   transition: all 0.2s ease-in-out;
 }
 .btn:hover {
@@ -189,7 +189,7 @@ header {
   color: #d4af37;
   border-bottom: #d4af37 solid 2px;
   border-left: #d4af37 solid 2px;
-  border-radius: 25px;
+  border-radius: 10px;
   transform: scale(1.08);
 }
 .botones:active {
@@ -266,9 +266,10 @@ header {
 }
 
 .carru-hab {
-  border-radius: 25px;
-  height: 30vh;
-  object-fit: cover;
+  border-radius: 10px;
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
   /* EFECTO 3d*/
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
